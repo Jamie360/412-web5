@@ -4,98 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Niconne&display=swap" rel="stylesheet">
     <style>
+body{
+  margin:auto; 
+  background-image: url(../portfolio/img/background.jpg);
   
-  .grid_container {
-  position: relative;
-  width: 50%;
+  }
+  
+  nav{
+   width:100%; 
+   background-color:#ACBF9F; 
+   display: grid;
+   place-items: center;
+   }
+
+   #nav_logo{
+   width: 293px;
+   height: 122px; 
+   }
+
+   nav ul li {
+text-decoration: none;    
+margin-right: 20px;
+display: inline-block;
 }
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
+ul{
+font-size: 19px;
+text-align: center;  
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
+h1{
+text-align: center;
+font-family: 'Adeptly Regular';
+font-weight: normal;
+font-size: 50px;
+color: brown;
 }
 
-.grid_container:hover .overlay {
-  opacity: 1;
+a{
+text-decoration: none;
+color: white;
+font-weight: bold;
 }
 
-#text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}  
-    </style>
+.frame {
+display: grid;
+grid-template-columns: 1fr;
+margin: 8em;
+margin-bottom: 5rem;
+width:66em;
+height: 46em;
+background-color: white;
+border-radius: 2em;  
+}
+
+.image{
+background-image: url(../portfolio/img/first_billboard.png);
+background-size: cover;
+background-position: center;
+margin-top: -70px;
+margin-left: 365px;
+width: 30%;
+height: 378px;
+}
+
+p{
+max-width: 50em;
+margin-top: -35px;
+color: darkgray;
+padding-left: 154px;
+}
+
+.button {
+    text-decoration: none;
+    color: #f2f2f2;
+    margin-top: 15px;
+    border: solid 1.5px #ffffff;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+footer{
+    width: 100%;
+    height: 20px;
+    display: grid;
+    text-align: center;
+    background-color: #ACBF9F; 
+     
+}
+
+@media only screen and (max-width:800px){
+
+nav {
+position: relative;
+left:0px;
+text-align: right;
+}
+
+#nav_logo {
+    width: 176px;
+    height: 68px;
+}
+
+nav ul li {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul{
+font-size: 6px;    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+}
+
+h1{
+text-align: center;
+font-family: 'Adeptly Regular';
+font-weight: normal;
+font-size: 30px;
+color: #a52a2a;
+}
+
+.frame {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 14em;
+    margin: auto;
+    background-color: white;
+    border-radius: 2em;
+}
+
+.image{
+    background-image: url(../portfolio/img/first_billboard.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: -70px;
+    margin-left: 38px;
+    width: 70%;
+    height: 256px;    
+}
+
+p{
+font-size: 12px;    
+max-width: 14em;
+padding-left: 34px;   
+}
+
+footer{
+display: grid;
+height: 28px;
+text-align: center;
+background-color: #ACBF9F;   
+}
+}
+</style>
 </head>
 <body>
-<h1>My logo</h1>
 <nav>
+<img id="nav_logo" src="../portfolio/img/logo design_1.png">
     <ul>
-        <li><a href="./portfoilio.html">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="../portfolio/portfoilio.html">Home</a></li>
+        <li><a href="../portfolio/contact.html">Contact</a></li>
     </ul>
 </nav>
-<h1 id="projects">Projects</h1> 
- <iframe src="https://giphy.com/embed/L0YzHWMjfqP7OeObLl" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-  <iframe src="https://giphy.com/embed/L0YzHWMjfqP7OeObLl" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>   
-<div class="grid_container">
-<figure>
-    <img src="../portfolio/logo design.png">
-    <div class="overlay">
-    <div class="text">hgnkjknmnjksafdgfhg</div>
-    </figure>
-    </div>
-    </div>
 
-    <div class="grid_container">
-<figure>
-    <img src="../portfolio/logo design.png">
-    <div class="overlay">
-    <div class="text">hgnkjknmnjksdafdfgfgh</div>
-    </figure>
-    </div>
-    </div>
+<br>
 
+<section class="frame">
+<h1>Advertising poster</h1> 
+<div class="image"></div>    
+<p>For this project, I created an advertising poster for the restaurant La Notté. 
+La Notté is a kosher Italian food restaurant in Montreal. I chose to create an advertising 
+poster for La Notté because it was a new restaurant that did not have any public advertisements 
+at the time. The poster that I created has a black background with an image of a table set with 
+an elegant water pitcher and wine glass in its center. I used a simple white font that is easy to 
+read and which highlights the Italian flag to emphasize that it is an Italian restaurant. </p>
+</section>
 
-    <div class="grid_container">
-    <figure>
-    <img src="../portfolio/logo design.png">
-    <div class="overlay">
-    <div class="text">hgnkjknmnjksdxfbc</div>
-    </figure>
-    </div>
-    </div>
+<br>
 
-
-    <div class="grid_container">
-    <figure>
-    <img src="../portfolio/logo design.png">
-    <div class="overlay">
-    <div class="text">hgnkjknmnjksfdgfg</div>
-    </figure>
-    </div>
-     </div>
-  
- <footer>&copy; Jamie 2023</footer>   
+<footer>&copy; Jamie 2023</footer>   
 </body>
 </html>

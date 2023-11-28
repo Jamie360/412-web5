@@ -4,60 +4,388 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/portfolio.css">
-    <title>Portfolio</title>
-    <script src="../web5/js/portfolio.js"></script>
+    <title>portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Niconne&display=swap" rel="stylesheet">
+<style>
+
+html{
+scroll-behavior: smooth;    
+}        
+  
+  body{
+  margin:auto; 
+  background-image: url(../portfolio/img/background.jpg);
+  
+  }
+  
+  nav{
+   width:100%; 
+   background-color:#ACBF9F; 
+   display: grid;
+   place-items: center;
+   }
+
+   #nav_logo{
+   width: 293px;
+   height: 122px; 
+   }
+
+   nav ul li {
+text-decoration: none;    
+margin-right: 20px;
+display: inline-block;
+}
+
+ul{
+font-size: 19px;
+text-align: center;  
+}
+
+h1{
+text-align: center;
+font-family: 'Adeptly Regular';
+font-weight: normal;
+font-size: 50px;
+color: brown;
+}
+
+a{
+text-decoration: none;
+color: white;
+font-weight: bold;
+}
+
+.frame {
+display: grid;
+grid-template-columns: 1fr;
+margin: 8em;
+margin-bottom: 5rem;
+width:66em;
+height: 22em;
+background-color: white;
+border-radius: 2em;  
+}
+
+.image{
+background-image: url(../portfolio/img/profile_picture.jpg);
+background-size: cover;
+background-position: center;
+border-radius: 50%;
+margin-top: -135px;
+margin-left: 25px;
+width: 28%;
+height: 298px;
+  
+}
+
+p{
+max-width: 39em;
+padding-left: 357px;
+margin-top: -168px;
+color: darkgray;
+}
+
+.projects {
+display: grid;
+grid-template-columns: 1fr;
+margin: 8em;
+width: 65em;
+height: 63em;
+background-color: white;
+border-radius: 2em;
+}
+
+#projects h2 {
+    position: relative;
+    color:beige;
+    font-size: 2.5em;
+    font-family: 'livvic', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    justify-items: start;
+    padding: 1.5em 13.5em;
+}
+
+#projects_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    padding: 0 1em;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+justify-items: center;
+align-items: center;
+margin-top: -15em;
+   
+}
+
+
+#image_container {
+    width: 17em;
+    height: 20em;
+    margin: 1em 2em;
+    padding: 0;
+    position: relative;
+    background-color:orange;
+    overflow: hidden;
+}
+
+#image_container img {
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+
+#hidden {
+    display: grid;
+    transform: translateY(0px);
+    width: 20em;
+    height: 20em;
+    position: absolute;
+    margin: 4em 2em;
+    padding: 0;
+    opacity: 0;
+    top: -4em;
+    left: -2em;
+}
+
+#hidden:hover{
+    /* transform: scale(1.1); */
+    display: grid;
+    background-color: orange;
+    width: 20em;
+    height: 20em;
+    position: absolute;
+    margin: 4em 2em;
+    padding: 0;
+    border-radius: 2em;
+    opacity: 0.5;
+    top: -4em;
+    left: -2em;
+    /* transform: translateY(1px); */
+}
+
+#hidden a {
+    text-decoration: none;
+}
+
+#hidden a h3 {
+   background-color:orange;
+    font-size: 20pt;
+    font-family: 'Ephesis', cursive;
+    font-weight: bold;
+    justify-items: center;
+    margin: 2em 3em;
+    text-align: left;
+    text-decoration: none;
+    transform: translateY(127px);
+}
+
+#hidden a h3:hover{
+    color:red;
+    font-weight: bold;
+    opacity: none;
+}
+
+.button {
+    text-decoration: none;
+    color: #f2f2f2;
+    margin-top: 15px;
+    border: solid 1.5px #ffffff;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+footer{
+    width: 100%;
+    height: 20px;
+    display: grid;
+    text-align: center;
+    background-color: #ACBF9F; 
+     
+}
+
+@media only screen and (max-width:800px){
+
+nav {
+    position: relative;
+    left: 0px;
+    text-align: right;
+}
+
+#nav_logo {
+    width: 128px;
+    height: 52px;
+}
+
+nav ul li {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul{
+font-size: 6px;    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+}
+
+.image {
+    background-image: url(../portfolio/img/profile_picture.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-left: 61px;
+    margin-top: -59px;
+    width: 50%;
+    height: 122px;
+}
+
+.frame {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 14em;
+    margin-left: 12px;
+    margin: auto;
+    background-color: white;
+    border-radius: 2em;
+}
+
+h1{
+text-align: center;
+font-family:'Adeptly Regular';
+font-weight: normal;
+font-size: 30px;
+color: brown;
+}
+
+p{
+font-size: 10px;    
+margin-top: -30px;    
+max-width: 19em;
+padding-left: 19px;   
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 13px;
+    width: 14em;
+    margin: auto;
+    background-color: white;
+    border-radius: 2em;
+}
+
+#image_container {
+    width: 10em;
+    height: 11em;
+    margin-bottom: 0em;
+    padding: 0;
+    position: relative;
+    background-color: orange;
+    overflow: hidden;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-top: 0em;
+}
+
+#hidden {
+    display: grid;
+    transform: translateY(0px);
+    width: 25em;
+    height: 20em;
+    position: absolute;
+    margin: 3em -2em;
+    padding: 0;
+    opacity: 0;
+    top: -4em;
+    left: -2em;
+}
+
+footer{
+display: grid;
+height: 43px;
+text-align: center;
+background-color: #ACBF9F;  
+}
+}
+</style>
 </head>
 <body>
-<img src="../portfolio/logo design.png" class="intro_text">
 <nav>
+<img id="nav_logo" src="../portfolio/img/logo design_1.png">
     <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="./projects.html">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="../web5.html">Web 5</a></li>
+        <li><a href="../portfolio/contact.html">Contact</a></li>
     </ul>
 </nav>
-<article class="scroll-reveal box left">
-<h2 id="about">About me</h2>
-<iframe src="https://giphy.com/embed/KHF2LH5zMtGxHMC3wB" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-<iframe src="https://giphy.com/embed/KHF2LH5zMtGxHMC3wB" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-<img src="../portfolio/logo design.png">
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-Corrupti eligendi magni veniam ab qui porro officia voluptates obcaecati voluptatem ipsum. 
-Hic, et molestias! Repudiandae nostrum voluptatem suscipit ipsa deserunt qui!</p>
-</article> 
-<a class="scroll-reveal box right" href="./projects.html">Click here!</a>
+<br>
+<section class="frame">
+<h1>About me</h1> 
+<div class="image"></div>    
+<p>My name is Jamie Fried, creator of J Designs. I am from Montreal and currently 
+in my last semester of Micromedia at Vanier College. My program consists of courses 
+including graphic design, web design, photography and animation. After graduation, I
+want to work at a Graphic Design firm where I can continue to express my creativity 
+and artistic talent.  </p>
+</section>
 
+<br>
 
-<main class="scroll-reveal box top">
-  <div class="grid_container">
-  <h2 id="contact">Contact</h2>
-    <h4>Want to reach me, here's your chance!</h4>
-    <div class="grid_container">
-    <p class="grid_container">First Name:</p>
-    <input required type="text" name="first_name">
-    <p class="grid_container">Last Name:</p>
-    <input required type="text" name="last_name">
-    <div>
-    <p class="grid_container">Email:</p>
-    <input required type="text" name="email">
-    </div>
-    <div>
-    <p class="grid_container">Comment:</p>
-    <input required type="text" name="comment">
-    </div>
-    <button>Submit</button> 
-    </main>
-    
-    <p>Social media icons of Facebook, Instagram and Gmail</p>
-   <div class="social-container">
-    <ul class="social-icons">
-        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        <li><a href="#"><i class="fa fa-codepen"></i></a></li>
-    </ul>
-   </div>    
+<section class="projects">
+<h1>Projects</h1>
+<section id="container">
+<div id="image_container" class="projects">
+            <img src="../portfolio/img/first_billboard.png">
+            <div id="hidden"> 
+                <a href="../portfolio/projects.html"><h3>Advertising poster</h3></a>
+            </div>
+        </div>
+        
+        <div id="image_container" class="projects">
+            <img src="./img/Jamie_Fried_Six_Word_Story.png">
+            <div id="hidden"> 
+                <a href="../portfolio/project_1.html"><h3>Six Word Story</h3></a>
+            </div>
+        </div>
+       
+        <div id="image_container" class="projects">
+                <img src="./img/publication_design_1.png">
+                <div id="hidden">
+                <a href="../portfolio/project_2.html"><h3>Composition poster</h3></a>
+                </div>
+            </div>
+
+             <div id="image_container" class="projects">
+                <img src="../portfolio/img/magazine_cover.png">
+                <div id="hidden">
+                <a href="../portfolio/project_3.html"><h3>Magazine Cover</h3></a>
+                </div>
+            </div>
+       </section>            
+</section>
+<br>
 <footer>&copy;Jamie 2023</footer>   
 </body>
 </html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio_moodboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Niconne&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+<style>
+
+header{
+background-color: white; 
+display: grid; 
+}
+
+
+body{
+margin: auto;
+background-image: url(../portfolio/img/background.jpg);  
+}
+
+nav{
+height: 35px;
+position: relative;
+display: grid;
+top: -19px;
+left: -11px;
+text-align: center;  
+}
+
+nav ul li {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+a{
+text-decoration: none;  
+color:darkred; 
+font-size: 18px;
+font-weight: bold; 
+}
+    h1{    
+    font-family:'Adeptly Regular';
+    font-weight: bold;
+    color: #a52a2a;
+    margin-left: 9px;
+    text-align: center;   
+    }
+    
+    h2{
+    text-align:center;
+    font-family: 'PT Sans', sans-serif;  
+    }
+
+    main{
+display: grid;
+grid-template-columns: 1fr;
+margin: 8em;
+margin-bottom: 5rem;
+height: 98em;
+background-color: white;
+border-radius: 2em;    
+    }
+
+    p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;    
+    }
+
+    img{
+    width: 264px;
+    height: 363px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    }
+
+#logo_image{
+width:60%;
+height:80%;
+margin: auto;  
+}    
+
+
+#logo{
+width: 50%;
+background-color:#ACBF9F;
+display: grid;
+margin: auto;
+border-radius: 2em;
+grid-template-columns: 1fr;
+place-content: center;
+}
+
+.container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+      }
+     #color1 {
+        background-color: #ACBF9F;
+        width: 80px;
+        height: 80px;
+      }
+
+     #color3{
+      background-color: #a52a2a;
+      width: 80px;
+      height:80px;
+      }
+
+    #color4{
+      background-color:#a9a9a9;
+      width: 80px;
+      height:80px; 
+      }
+
+    .text{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;    
+    }
+    
+    .frame{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items:center; 
+    }
+    </style>
+</head>
+<body>
+<header> 
+<h1>Portfolio Moodboard</h1>   
+<nav>
+<ul>
+<li><a href="../web5.html">Home</a></li>
+<li><a href="https://micromedia.vanier.college">Micromedia</a></li>
+<li><a href="../portfolio/portfoilio.html">Portfolio</a></li>
+</ul>      
+</nav>
+</header> 
+<main>
+<h1>Colors</h1>
+<div class="container">
+<figure><h2>Olive green</h2><article id="color1"></article><p>#ACBF9F</p></figure>  
+<figure><h2>Brown</h2><article id="color3"></article><p>#a52a2a</p></figure>
+<figure><h2>Dark gray</h2><article id="color4"></article><p>#a9a9a9</p></figure>
+</div>
+
+<h1>Logo</h1>
+<section id="logo">
+<img id="logo_image" src="../portfolio/img/logo design_1.png">
+</section>
+
+<h1>Typography</h1>
+<section class="text">
+<figure>  
+<h2>Header</h2>
+<h1>Avenir</h1>
+</figure>
+<figure>
+<h2>Paragraph</h2>
+<h2>Arial</h2>
+</figure>
+</section>
+
+<h1>Wireframe Sketches</h1>
+<section class="frame">
+<figure> 
+<h2>Homepage</h2>
+<img src="../portfolio/img/portfolio_homepage.jpg">
+</figure> 
+<figure>
+<h2>Image Subsection</h2>
+<img src="../portfolio/img/individual_portfolio_image.jpg">
+</figure>
+<figure>
+<h2>Contact page</h2>
+<img src="../portfolio/img/portfolio_contact_page.jpg">  
+</figure>
+</section>
+</main>
+</body>
+</html>
