@@ -1,38 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>web_5_homepage</title>
     <style>
-     body{
-     background-color: lightblue;   
-     }
-     
-     h1{
-     text-align:center;
-     color: aliceblue; 
-     font-size: 70px;
-     padding-bottom:127px;  
-     }
-    
-     a{
-    font-size:20px;
-    padding-left: 334px;    
-    color:aliceblue;
-    text-decoration: none;
-    font-family:'Arial Narrow Bold', sans-serif;  
-    }
-    
-    a:hover{
-    color:coral;  
-    }
-</style>
-</head>
-<body>
-<h1>Projects</h1>    
-<a href="../web5/template-demo.html">Template Demo</a>
-<a href="../web5/portfolio/portfoilio.html">Portfolio</a>
-<a href="../web5/social_media.html">Social Media</a>   
-</body>
+      body {
+        background-color: lightblue;
+      }
+
+      h1 {
+        text-align: center;
+        color: aliceblue;
+        font-size: 70px;
+        padding-bottom: 127px;
+      }
+
+      a {
+        font-size: 20px;
+        color: aliceblue;
+        text-align: center;
+        text-decoration: none;
+        font-family: "Arial Narrow Bold", sans-serif;
+      }
+
+      a:hover {
+        color: coral;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Projects</h1>
+    <div class="container">
+      <figure>
+        <h2>Exercises</h2>
+        <a href="../web5/template-demo.html">Template Demo</a><br />
+        <a href="../web5/social_media.html">Social Media</a>
+      </figure>
+      <figure>
+        <h2>Projects</h2>
+        <a href="../web5/portfolio/portfoilio.html">Portfolio</a><br />
+        <a href="../web5/portfolio/poftfolio_moodboard.html"
+          >Portfolio Moddboard</a
+        ><br />
+        <a href="../web5/client_website/client.html">Client website</a><br />
+        <a href="../web5/client_website/client_moodboard.html"
+          >Client moodboard and wireframe</a
+        ><br />
+        <a href="../web5/web_case_study/case_study.html">Web Case Study</a
+        ><br />
+      </figure>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,262 @@
+body {
+    margin: auto;
+    background-image: url(../img/background.jpg);
+}
+
+nav {
+    width: 100%;
+    background-color: #ACBF9F;
+    display: grid;
+    place-items: center;
+}
+
+#nav_logo {
+    width: 293px;
+    height: 122px;
+}
+
+nav ul li {
+    text-decoration: none;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+ul {
+    font-size: 19px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.form_header {
+    font-family: 'Adeptly Regular';
+    font-weight: normal;
+    font-size: 50px;
+    color: brown;
+    text-align: center;
+    margin-top: -56px;
+}
+
+.contact_form {
+    width: 60em;
+    height: 42em;
+    background-color: white;
+    border-radius: 2em;
+    margin: 0 auto;
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+.form_paragraph {
+    font-family: "Karla", sans-serif;
+    color: rgb(14, 14, 14);
+    text-align: center;
+    font-size: 18px;
+}
+
+
+form {
+    width: 90%;
+    display: grid;
+    grid-gap: 69px;
+    margin: auto;
+}
+
+.form_grid {
+    width: 100%;
+    position: relative;
+}
+
+.form_grid_1 {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+
+.form_grid_2 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.form_grid_3 {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+}
+
+.form_grid_4 {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+    text-align: center;
+    margin-top: -42px;
+    
+}
+
+.text_field {
+    font-family: "Karla", sans-serif;
+    width: 100%;
+    font-size: 13px;
+    border-bottom: 1px solid #07332b;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    outline: 0;
+    border-radius: 0;
+}
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.contact_form button {
+    font-family: "Karla", sans-serif;
+    text-decoration: none;
+    padding: 5px;
+    width: 20%;
+    border-color: white;
+    border-radius: 40px;
+    background: #07332b;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: none;
+}
+
+footer {
+    width: 100%;
+    height: 20px;
+    display: grid;
+    text-align: center;
+    background-color: #ACBF9F;
+
+}
+
+@media only screen and (max-width:800px) {
+
+    #header {
+        background-size: cover;
+        display: grid;
+        animation-name: fade;
+        opacity: 0.5;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+        height: 99px;
+        margin-top: -25px;
+
+    }
+
+    h1 {
+        text-align: center;
+        padding: 15px;
+        color: white;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    img {
+        width: 30%;
+    }
+
+    nav {
+        position: relative;
+        left: 0px;
+        text-align: right;
+    }
+
+
+
+    #nav_logo {
+        width: 128px;
+        height: 52px;
+    }
+
+
+    nav ul li {
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    ul {
+        font-size: 6px;
+    }
+
+    h2 {
+        font-size: 13px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+        font-size: 8px;
+        margin-top: -1px;
+        margin-left: 11px;
+    }
+
+    .contact_form {
+        width: 13em;
+        height: 40em;
+        background-color: white;
+        border-radius: 2em;
+        margin-top: 50%;
+        margin-bottom: 5%;
+    }
+
+    .form_paragraph {
+        font-family: "Karla", sans-serif;
+        color: rgb(14, 14, 14);
+        text-align: left;
+        font-size: 13px;
+    }
+
+    .contact_form button {
+        font-family: "Karla", sans-serif;
+        text-decoration: none;
+        padding: 5px;
+        width: 30%;
+        border-color: white;
+        border-radius: 40px;
+        background: #07332b;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: all 0.3s ease-in-out;
+        box-shadow: none;
+    }
+
+    .text_field {
+        font-family: "Karla", sans-serif;
+        width: 90%;
+        font-size: 13px;
+        border-bottom: 1px solid #07332b;
+        border-left: 0px;
+        border-right: 0px;
+        border-top: 0px;
+        outline: 0;
+        border-radius: 0;
+    }
+
+
+
+    footer {
+        display: grid;
+        height: 43px;
+        text-align: center;
+        background-color: #ACBF9F;
+    }
+}

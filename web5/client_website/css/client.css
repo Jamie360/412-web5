@@ -1,0 +1,333 @@
+  html {
+      scroll-behavior: smooth;
+  }
+
+  body {
+      margin: auto;
+  }
+
+  img {
+      width: 20%;
+      margin-left: 5px;
+      margin-top: 8px;
+  }
+
+  nav {
+      position: relative;
+      text-align: center;
+      margin: auto;
+  }
+
+  nav ul li {
+      text-decoration: none;
+      margin-right: 20px;
+      display: inline-block;
+  }
+
+  ul {
+      font-size: 19px;
+  }
+
+  a {
+      text-decoration: none;
+      color: red;
+      font-weight: bold;
+  }
+
+  #header {
+      background-size: cover;
+      width: 100%;
+      height: 375px;
+      animation-name: fade;
+      animation-duration: 12s;
+      animation-iteration-count: infinite;
+      animation-delay: 0s;
+    
+  }
+
+  @keyframes fade {
+      0% {
+          background-image: url(../img/plumbing_photo.jpg);
+      }
+
+      16.66% {
+          background-image: url(../img/second_plumbing_photo.jpg);
+      }
+
+      33.33% {
+          background-image: url(../img/third_plumbing_photo.jpg);
+      }
+
+      49.99% {
+          background-image: url(../img/plumbing_photo.jpg);
+      }
+
+      66.65% {
+          background-image: url(../img/second_plumbing_photo.jpg);
+      }
+
+      83.31% {
+          background-image: url(../img/third_plumbing_photo.jpg);
+      }
+
+      100% {
+          background-image: url(../img/plumbing_photo.jpg);
+      }
+  }
+
+  .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      place-items: center;
+  }
+
+  #box_frame {
+      display: grid;
+      justify-self: center;
+      grid-template-columns: 1fr;
+      width: 60vw;
+      margin: auto;
+      height: auto;
+      padding: 1em;
+      background-color: darkgray;
+      border-radius: 2em;
+  }
+
+  #box_frame img {
+      width: 50%;
+      margin: auto;
+  }
+
+  #box_frame h4 {
+      font-family: "Roboto", sans-serif;
+      font-size: 15pt;
+      text-align: center;
+  }
+
+  #box_frame p {
+      font-family: "Roboto", sans-serif;
+      font-size: 12pt;
+      margin-left: 6em;
+      color: black;
+  }
+
+  h2 {
+      margin-top: 58px;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      color: red;
+      font-size: 40px;
+      text-align: center;
+  }
+
+  h3 {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h4 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+  }
+
+#paragraph {
+      max-width: 42em;
+      margin: auto;
+      position: relative;
+  }
+
+  button {
+      background-color: #a61f2b;
+      border-radius: 10px;
+      border: 2px solid #a61f2b;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+      position: relative;
+      width: 90px;
+      top: 16px;
+      left: 225px;
+      color: white;
+      text-align: center;
+  }
+
+  #about_button {
+      margin-left: 350px;
+  }
+
+  #button {
+      color: white;
+  }
+
+  p {
+      font-size: 19px;
+      max-width: 36em;
+  }
+
+  figure {
+      text-align: center;
+  }
+
+  h1 {
+      text-align: center;
+      padding: 101px;
+      color: red;
+      font-size: 60px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffffa6;
+      height: 100%;
+  }
+
+  footer {
+      background-color: darkgray;
+      width: 100%;
+      height: 37px;
+      text-align: center;
+  }
+
+  @media only screen and (max-width: 720px) {
+      #header {
+          background-size: cover;
+          display: grid;
+          animation-name: fade;
+          animation-duration: 12s;
+          animation-iteration-count: infinite;
+          animation-delay: 0s;
+          height: 99px;
+      }
+
+      h1 {
+          text-align: center;
+          padding: 25px;
+          color: red;
+          font-size: 20px;
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: #ffffffa6;
+          height: 100%;
+          margin-top: 0px;
+      }
+
+        img {
+            width: 40%;
+            padding-left: 30px;
+        }
+
+      nav {
+          display: inline-block;
+          text-align: center;
+      }
+
+      nav ul li {
+          text-decoration: none;
+      }
+
+      a {
+          text-decoration: none;
+          color: red;
+          font-weight: bold;
+      }
+
+      #about_button {
+          margin-left: 75px;
+      }
+
+      ul {
+          font-size: 12px;
+      }
+
+      h2 {
+          font-size: 20px;
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+          margin-top: 15px;
+      }
+
+      h3{
+      font-size: 13px;  
+      }
+
+      #paragraph {
+          font-size: 12px;
+          margin: auto;
+          max-width: 22em;
+      }
+
+      button {
+          background-color: #a61f2b;
+          border: 2px solid #a61f2b;
+          text-decoration: none;
+          display: block;
+          position: relative;
+          font-size: 7px;
+          width: 55px;
+          height: 28px;
+          top: 8px;
+          padding: 2px;
+          left: 80px;
+          color: white;
+      }
+
+      #button {
+          color: white;
+      }
+
+      .container {
+          display: grid;
+          grid-template-columns: 1fr;
+          place-items: center;
+      }
+
+      #grid_text {
+          font-size: 12px;
+          margin-left: 5px;
+          text-align: center;
+      }
+
+      #box_frame {
+          display: grid;
+          justify-self: center;
+          grid-template-columns: 1fr;
+          width: 56vw;
+          height: auto;
+          padding: 1em;
+          background-color: darkgray;
+          border-radius: 2em;
+      }
+
+      #box_frame img {
+          width: 60%;
+          margin: auto;
+          padding-left:0px;
+      }
+
+      #box_frame h4 {
+          font-family: "Roboto", sans-serif;
+          font-size: 8pt;
+          text-align: center;
+      }
+
+      #box_frame p {
+          font-family: "Roboto", sans-serif;
+          font-size: 8pt;
+          margin-left:4px;
+          color: black;
+      }
+
+      h4{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 9pt;  
+      }
+
+      form {
+          margin: auto;
+          display: grid;
+          place-content: center;
+      }
+
+      footer {
+          background-color: darkgray;
+          display: grid;
+          height: 20px;
+          font-size: 10px;
+          text-align: center;
+      }
+  }
